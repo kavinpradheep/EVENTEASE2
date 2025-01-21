@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #6e54b5, #a179d8);
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.left-photo {
+  flex: 1;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.left-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.login-right-section {
+  flex: 1;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.login-right-section h1 {
+  font-size: 2.2rem;
+  color: #6e54b5;
+  margin-bottom: 10px;
+}
+
+.login-right-section p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.login-right-section p span {
+  color: #6e54b5;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.admin-link {
+  font-size: 0.9rem;
+  color: #6e54b5;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  gap: 15px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-input:focus {
+  border-color: #6e54b5;
+  outline: none;
+}
+
+.login-button {
+  background-color: #6e54b5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #5a3ea6;
+}
+
+.or-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.or-register hr {
+  flex-grow: 1;
+  border-top: 1px solid #ddd;
+  margin: 0 10px;
+}
+
+.google-btn {
+  background-color: #4285F4;
+  color: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.google-btn:hover {
+  background-color: #357ae8;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .left-photo img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+}

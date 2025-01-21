@@ -1,0 +1,169 @@
+/* 🔹 Main Event Holder - Better Spacing & Shadow */
+.events-main-holder {
+    background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Navigation Links */
+.event-nav-home, .event-nav-events {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 8px;
+    
+}
+
+.event-nav-home:hover {
+    color: #3172f4;
+    transform: scale(1.1);
+    background: rgba(49, 100, 244, 0.1);
+}
+
+.event-nav-events {
+    color: #3172f4;
+}
+
+.event-nav-events:hover {
+    color: #3172f4;
+    transform: scale(1.1);
+    background: rgba(49, 100, 244, 0.1)
+    
+}
+
+/* 🔹 Event Register Popup */
+.eventregister-popup {
+    margin: 25px auto;
+    position: fixed;
+    right: 20px;
+    top: 50px;
+    z-index: 1000;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.eventregister-popup:hover {
+    transform: scale(1.05);
+    
+}
+
+/* 🔹 Event Register Popup Content */
+.eventregister-popup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.eventregister-popup-container img {
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.eventregister-popup-container img:hover {
+    transform: scale(1.05);
+    
+}
+
+.eventregister-popup-container h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 🔹 Register Button */
+.eventregister-popup-container button {
+    height: 45px;
+    margin: 0px 40px;
+    border: none;
+    background-color: #3172f4;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.eventregister-popup-container button:hover {
+    background-color: #1d1dc4;
+    transform: scale(1.05);
+}
+
+/* 🔹 Event Container - Grid Layout */
+.event-container {
+    margin-top: 50px;
+    margin-right: 440px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+/* 🔹 Event Card - Modern Design */
+.event-container-event {
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f5f5f5, #dddddd);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-container-event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Event Image */
+.event-container-event img {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.event-container-event img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .events-main-holder {
+        padding: 20px;
+    }
+
+    .event-container {
+        margin-right: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .eventregister-popup {
+        width: 280px;
+        right: 10px;
+    }
+
+    .eventregister-popup-container img {
+        height: 300px;
+    }
+
+    .eventregister-popup-container button {
+        font-size: 18px;
+    }
+}

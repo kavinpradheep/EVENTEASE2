@@ -1,0 +1,192 @@
+/* Popup Styling */
+.event-details-popup {
+    position: fixed;
+    right: 20px;
+    top: 90px;
+    z-index: 1000;
+    width: 320px;
+    height: 600px;
+    background: linear-gradient(135deg, #eaa7ef, #c084f5);
+    color: #1d1dc4;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.event-details-popup:hover {
+    transform: scale(1.05);
+}
+
+/* Main Event Container */
+.event-detail-container {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Event Name */
+.event-main-event-name {
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navigation Hall Hover Effect */
+.event-nav-hall {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.event-nav-hall:hover {
+    color: #3172f4;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+/* Event College Name */
+.event-detail-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0 10px;
+    color: #444;
+}
+
+/* Description & About Event */
+.event-detail-description,
+.event-detail-aboutevent {
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Event Poster */
+.event-detail-poster {
+    display: block;
+    margin: 30px auto;
+    max-width: 90%;
+    max-height: 700px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.event-detail-poster:hover {
+    transform: scale(1.05);
+}
+
+/* Titles for Sections */
+.event-detail-about-event-title,
+.event-detail-discription-event-title,
+.event-detail-Poster-event-title,
+.event-detail-typeofevent-title,
+.event-detail-webinarlink-title,
+.event-detail-contact-title,
+.event-detail-registration-link-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin: 30px 0 15px;
+    padding-left: 15px;
+    border-left: 5px solid #3172f4;
+    transition: color 0.3s ease;
+}
+
+.event-detail-about-event-title:hover,
+.event-detail-discription-event-title:hover,
+.event-detail-Poster-event-title:hover,
+.event-detail-typeofevent-title:hover,
+.event-detail-webinarlink-title:hover,
+.event-detail-contact-title:hover,
+.event-detail-registration-link-title:hover {
+    color: #1d1dc4;
+}
+
+/* Event Details Content */
+.event-detail-typeofevent,
+.event-detail-webinar,
+.event-detail-contact,
+.event-detail-registration-link {
+    margin-left: 170px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+/* Webinar & Registration Links */
+.event-detail-webinar a,
+.event-detail-registration-link a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3172f4;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.event-detail-webinar a:hover,
+.event-detail-registration-link a:hover {
+    color: #1d1dc4;
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.event-detail-contact div {
+    background-color: #edf2ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.event-detail-contact div:hover {
+    background-color: #cce0ff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .event-detail-container {
+        padding: 20px;
+    }
+
+    .event-main-event-name {
+        font-size: 40px;
+    }
+
+    .event-detail-name {
+        font-size: 26px;
+    }
+
+    .event-detail-description,
+    .event-detail-aboutevent {
+        font-size: 18px;
+    }
+
+    .event-detail-poster {
+        max-width: 100%;
+    }
+
+    .event-details-popup {
+        width: 280px;
+        height: 500px;
+        right: 10px;
+    }
+}

@@ -1,0 +1,46 @@
+.admin-hall{
+    color: #3172f4;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+.admin-home{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+.admin-home:hover{
+    color: #3172f4;
+    transform: scale(1.1);
+    background: rgba(49, 100, 244, 0.1);
+}
+
+.admin-hall:hover{
+    color: #3172f4;
+    transform: scale(1.1);
+    background: rgba(49, 100, 244, 0.1);
+}
+
+.highlight {
+    background-color: red !important; /* Change to your preferred color */
+    color: white; /* Change text color to white */
+}
+
+.confirmation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000; /* Ensure popup is above other elements */
+}
+
+.confirmation-popup button {
+    margin: 5px;
+}

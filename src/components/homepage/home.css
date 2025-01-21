@@ -1,0 +1,166 @@
+.main-holder {
+    background-color: #ededed;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ededed;
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.left-section {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #030303;
+    font-size: 35px;
+}
+
+.middle-section {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #333333;
+}
+
+.home, .events, .about, .contact, .hall , .Sponsorsection , .right-section{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.home {
+    color: rgb(49, 100, 244);
+}
+
+.home:hover, .events:hover, .about:hover, .contact:hover, .hall:hover ,.Sponsorsection:hover {
+    color: #3172f4;
+    transform: scale(1.1);
+    background: rgba(49, 100, 244, 0.1);
+}
+
+.right-section {
+    margin: 0;
+    justify-self: end;
+}
+
+.page-container {
+    margin: auto 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.page-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page-container-left p {
+    color: rgb(127, 127, 127);
+    font-family: 'Inter', sans-serif;
+}
+
+.page-container-left h1 {
+    color: rgb(3, 3, 3);
+    max-width: 70%;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 55px;
+}
+
+.page-container-left h4 {
+    color: rgb(3, 3, 3);
+    font-weight: 300;
+}
+.home-to-event-clg-name{
+    display: flex;
+    flex-direction: row;
+}
+.selectcollege{
+ margin-left: -100px;    
+ align-items: center;
+}
+.home-to-event-selectcollege{
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.page-container-right{
+    margin-left: 70px;
+}
+.footer {
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer h4 {
+    color: rgb(38, 38, 38);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+/* Subscription styles */
+
+.selectcollege{
+    margin-right: 10px;
+}
+.subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.name-input, .email-input,.subscribe-select-college {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.subscribe-select-college{
+    height: 40px;
+}
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: rgb(49, 100, 244);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px
+}
+
+.subscribe-button:hover {
+    background-color: rgb(30, 78, 204);
+}
+
+.home-to-event-clg-name{
+    margin-left: 100px
+}
+

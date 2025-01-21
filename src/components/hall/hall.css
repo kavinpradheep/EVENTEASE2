@@ -1,0 +1,239 @@
+.hall-home {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+.hall-hall{
+    color: #3172f4;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+.hall-home:hover{
+    color: #3172f4;
+    transform: scale(1.1);
+    background: rgba(49, 100, 244, 0.1);
+}
+.hall-hall:hover{
+    color: #3172f4;
+    transform: scale(1.1);
+    background: rgba(49, 100, 244, 0.1);
+}
+
+.hall-main-container{
+    width: 1000px;
+    margin: auto;
+}
+.main-holder {
+    background-color: #ededed;
+    padding: 20px;
+    border-radius: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ededed;
+    padding: 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.details-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left-section {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #030303;
+}
+.details-left-section p{
+    font-size: 14px;
+}
+.middle-section {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #333333;
+}
+
+/* Hall Table */
+.hall-table-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hall-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.hall-table th, .hall-table td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+.hall-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hall-table td {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 12px;
+}
+
+.hall-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.hall-table td:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Dropdown for Hall Information */
+.hall-dropdown {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hall-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hall-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+/* Calendar Styles */
+.react-calendar {
+    width: 250px;
+    border-radius: 15px; /* Round the corners */
+    background-color: #ffffff; /* White background for the calendar */
+    font-family: 'Inter', sans-serif; /* Use the same font as in your hall styles */
+    margin: 20px; /* Space around the calendar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Navigation for the Calendar */
+.react-calendar__navigation {
+    display: flex; /* Align navigation elements in a row */
+    justify-content: center; /* Center navigation */
+    align-items: center; /* Vertically center items */
+    margin-bottom: 10px; /* Space below the navigation */
+    border: none;
+    background-color: #4CAF50;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+.react-calendar__navigation__arrow {
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Space around the arrow */
+    font-size: 18px; /* Size of the arrow icons */
+    color: white; /* Use the same blue color as in your links */
+    background-color:#4CAF50;
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.react-calendar__navigation__label {
+    font-weight: bold; /* Bold text for better visibility */
+    font-size: 20px; /* Size of the month/year text */
+    color: #333; /* Text color */
+    border: none;
+    background-color: #4CAF50;
+}
+
+/* Day Styles */
+.react-calendar__month-view__days__day {
+    padding: 10px; /* Space for each day */
+    border: none;
+    background-color: white;
+    border-right: 1px solid rgba(42, 42, 42, 0.267);
+    border-bottom: 1px solid rgba(42, 42, 42, 0.267);
+    transition: background-color 0.2s; /* Smooth background color transition */
+}
+
+/* Selected day style */
+.react-calendar__month-view__days__day--active {
+    background-color: rgb(49, 100, 244); /* Blue for the selected day */
+    color: white; /* White text for selected day */
+}
+
+/* Today’s date style */
+.react-calendar__month-view__days__day--today {
+    border: 2px solid #4CAF50; /* Green border for today's date */
+}
+
+/* Styling for the grid of days */
+.react-calendar__month-view__days {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+}
+
+/* Disable days style */
+.react-calendar__month-view__days__day--disabled {
+    color: #ccc; /* Gray color for disabled days */
+}
+/* Day Labels Styles */
+.react-calendar__month-view__weekdays {
+    display: flex; /* Use flex to arrange day labels */
+    justify-content: space-between; /* Space day labels evenly */
+    font-weight: bold; /* Bold text for visibility */
+    color: #333; /* Text color for day labels */
+    font-size: 14px; /* Font size for day labels */
+    margin-bottom: 10px; /* Space below day labels */
+}
+
+.react-calendar__month-view__weekdays__day {
+    flex: 1; /* Make each day label equal width */
+    text-align: center; /* Center align text */
+    padding: 5px 0; /* Padding for better spacing */
+}
+
+/* Hover effect for day labels */
+.react-calendar__month-view__weekdays__day:hover {
+    color: rgb(49, 100, 244); /* Change color on hover */
+    cursor: pointer; /* Pointer cursor */
+}
+/* hall.css */
+
+.highlight {
+    background-color: red !important; /* Change to desired highlight color */
+    color: white !important; /* Change text color for better visibility */
+}

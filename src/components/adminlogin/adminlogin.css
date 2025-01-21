@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Outfit', sans-serif;
+	background-color: #fafafa;
+	color: #333;
+  }
+  
+  .login-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 0; /* No extra padding to ensure full height */
+	background: linear-gradient(to bottom right, #6e54b5, #a179d8);
+  }
+  
+  .login-container {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 0; /* Remove rounded corners for top and bottom extension */
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	max-width: 900px;
+	height: 90vh; /* Make the container take the full height of the viewport */
+	overflow: hidden;
+  }
+  
+  .left-photo {
+	flex: 1;
+	text-align: center;
+	background-color: #f4f4f4;
+	padding: 20px;
+  }
+  
+  .left-photo img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+  .login-right-section {
+	flex: 1;
+	padding: 40px 30px;
+	text-align: center;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  }
+  
+  .login-right-section h1 {
+	font-size: 2.2rem;
+	color: #6e54b5;
+	margin-bottom: 10px;
+  }
+  
+  .error-message {
+	color: #f34646;
+	font-size: 0.95rem;
+	margin-bottom: 15px;
+  }
+  
+  .input {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	font-size: 1rem;
+	margin-bottom: 15px;
+  }
+  
+  .input:focus {
+	border-color: #6e54b5;
+	outline: none;
+  }
+  
+  .btn {
+	display: block;
+	width: 100%;
+	padding: 12px 15px;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+  }
+  
+  .green-btn {
+	background-color: #6e54b5;
+	color: white;
+	border: none;
+	transition: background-color 0.3s ease;
+  }
+  
+  .green-btn:hover {
+	background-color: #5a3ea6;
+  }
+  
+  @media (max-width: 768px) {
+	.login-container {
+	  flex-direction: column;
+	}
+  
+	.left-photo img {
+	  max-width: 80%;
+	  margin-bottom: 20px;
+	}
+  }
+  
