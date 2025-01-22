@@ -30,7 +30,7 @@ const Adminhall = () => {
     useEffect(() => {
         const fetchLockedDates = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/lockeddates');
+                const response = await fetch('https://eventease2.onrender.com/api/lockeddates');
                 if (!response.ok) throw new Error('Network response was not ok');
                 const data = await response.json();
                 const datesByHall = {};
@@ -73,7 +73,7 @@ const Adminhall = () => {
 
     const handleConfirmLock = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/lockeddates', {
+            const response = await fetch('https://eventease2.onrender.com/api/lockeddates', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -99,7 +99,7 @@ const Adminhall = () => {
 
     const handleConfirmUnlock = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/lockeddates', {
+            const response = await fetch('https://eventease2.onrender.com/api/lockeddates', {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

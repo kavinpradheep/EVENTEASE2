@@ -29,7 +29,7 @@ const Event = () => {
         // Fetch the event details from the server
         const fetchEventData = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/events/${id}`); // Adjust the endpoint as necessary
+                const response = await fetch(`https://eventease2.onrender.com/api/events/${id}`); // Adjust the endpoint as necessary
                 if (response.ok) {
                     const data = await response.json();
                     setEventData(data);
@@ -86,7 +86,7 @@ const Event = () => {
                 <div className="event-detail-Poster-event-title">
                     Event Poster :
                 </div>
-                <img className="event-detail-poster" src={`http://localhost:5000/${eventData.eventPoster}`} 
+                <img className="event-detail-poster" src={`https://eventease2.onrender.com/${eventData.eventPoster}`} 
                 alt={`${eventData.collegeName} Poster`} /> 
                 <div className="event-detail-about-event-title">
                     About Event :

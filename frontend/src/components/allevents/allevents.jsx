@@ -40,7 +40,7 @@ const Events = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/events');
+                const response = await fetch('https://eventease2.onrender.com/api/events');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -96,7 +96,7 @@ const Events = () => {
                         events.map((event) => (
                             <div className="event-container-event" key={event._id}>
                                 <img 
-                                    src={`http://localhost:5000/${event.eventPoster}`} 
+                                    src={`https://eventease2.onrender.com/${event.eventPoster}`} 
                                     alt={`${event.eventName} Poster`} 
                                 /><br></br>
                                 <p>{event.collegeName}</p>

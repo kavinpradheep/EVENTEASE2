@@ -42,7 +42,7 @@ const Mainpage = () => {
         setLoading(true); // Start loading
 
         try {
-            const response = await axios.post('http://localhost:5000/api/subscribe', {
+            const response = await axios.post('https://eventease2.onrender.com/api/subscribe', {
                 email,
             });
 

@@ -110,7 +110,7 @@ const Eventregister = () => {
     formData.append('contacts', JSON.stringify(contacts));
 
     try {
-      const response = await fetch('http://localhost:5000/api/registerEvent', {
+      const response = await fetch('https://eventease2.onrender.com/api/registerEvent', {
         method: 'POST',
         body: formData,
       });
