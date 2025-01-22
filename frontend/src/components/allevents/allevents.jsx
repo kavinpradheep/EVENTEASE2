@@ -82,7 +82,7 @@ const Events = () => {
                 </div>
                 <div className="eventregister-popup">
                     <div className="eventregister-popup-container">
-                        <img src={"/public/asserts/event_register_popup.jpg"} alt="Event Registration Popup" />
+                        <img src="/asserts/event_register_popup.jpg" alt="Event Registration Popup" />
                         <h3>Showcase your Event</h3>
                         <button className='publish' onClick={eventregisterclick}>
                             PUBLISH
