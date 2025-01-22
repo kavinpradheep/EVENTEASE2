@@ -7,6 +7,9 @@ import path from 'path';
 import jwt from 'jsonwebtoken';
 import nodemailer from 'nodemailer'; // Import nodemailer
 import { body, validationResult } from 'express-validator';
+import dotenv from 'dotenv';
+dotenv.config(); // This loads the .env file
+
 
 // Initialize Express app
 const app = express();
@@ -26,18 +29,18 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-// MongoDB connection
-mongoose.connect('mongodb://localhost:27017/eventEaseDB', {
+// MongoDB connection (Updated for Atlas)
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 mongoose.connection.once('open', () => {
-  console.log('Connected to MongoDB');
+  console.log('Connected to MongoDB Atlas');
 });
 
 mongoose.connection.on('error', (err) => {
-  console.error('MongoDB connection error:', err);
+  console.error('MongoDB Atlas connection error:', err);
 });
 
 // Email transporter configuration
