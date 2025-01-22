@@ -25,7 +25,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/api/signup', {
+      const response = await fetch('https://eventease2.onrender.com/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

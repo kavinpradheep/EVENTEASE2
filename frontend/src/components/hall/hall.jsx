@@ -60,7 +60,7 @@ const Hall = () => {
     useEffect(() => {
         const fetchEventDates = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/lockeddates'); // Fetch from your local server
+                const response = await fetch('https://eventease2.onrender.com/api/lockeddates'); // Fetch from your local server
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
