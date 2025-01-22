@@ -70,7 +70,6 @@ pyparsing==3.2.0
 python-dateutil==2.9.0.post0
 python-slugify==8.0.4
 pytz==2024.2
-pywin32
 pyzmq==26.2.0
 requests==2.32.3
 requests-oauthlib==2.0.0
@@ -83,7 +82,6 @@ setuptools==65.5.0
 six==1.16.0
 stack-data==0.6.3
 sympy==1.13.1
-
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2
 tensorboard-plugin-wit==1.8.1
