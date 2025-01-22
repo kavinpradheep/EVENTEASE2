@@ -17,6 +17,11 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static('uploads')); // Serve static files from uploads folder
 
+app.use(cors({
+  origin: 'https://eventease-2.vercel.app/', // Frontend URL (replace with your production frontend URL)
+}));
+
+
 // Set up multer for file uploads
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
