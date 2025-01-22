@@ -274,6 +274,7 @@ const Eventregister = () => {
                 </div>
               </div>
             ))}
+            
 
             <button type="submit" className="register-submit" disabled={isPublishing}>
               {isPublishing ? 'Publishing...' : 'Publish'}
