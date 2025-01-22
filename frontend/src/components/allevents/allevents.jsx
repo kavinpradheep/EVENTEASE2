@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './allevents.css';
-//import eventpopup from '/assets/event_register_popup.jpg';
 
 const Events = () => {
     const navigate = useNavigate();
@@ -83,7 +82,7 @@ const Events = () => {
                 </div>
                 <div className="eventregister-popup">
                     <div className="eventregister-popup-container">
-                        <img src={"/assets/event_register_popup.jpg"} alt="Event Registration Popup" />
+                        <img src={"/public/asserts/event_register_popup.jpg"} alt="Event Registration Popup" />
                         <h3>Showcase your Event</h3>
                         <button className='publish' onClick={eventregisterclick}>
                             PUBLISH

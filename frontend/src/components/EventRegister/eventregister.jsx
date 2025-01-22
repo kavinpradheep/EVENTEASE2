@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './eventregister.css';
-import colleges from '../../../backend/colleges';
+import colleges from '../../../../backend/colleges';
 
 const Eventregister = () => {
   const navigate = useNavigate();

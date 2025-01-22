@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import adminCredentials from '../../../backend/admindata';
+import adminCredentials from '../../../../backend/admindata';
 import './adminlogin.css';
 
 const AdminLogin = () => {
