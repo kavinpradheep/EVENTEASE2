@@ -96,7 +96,7 @@ const Events = () => {
                         events.map((event) => (
                             <div className="event-container-event" key={event._id}>
                                 <img 
-                                    src={`http://localhost:5000/${event.eventPoster}`} 
+                                    src={`https://eventease2.onrender.com/${event.eventPoster}`} 
                                     alt={`${event.eventName} Poster`} 
                                 /><br></br>
                                 <p>{event.collegeName}</p>
