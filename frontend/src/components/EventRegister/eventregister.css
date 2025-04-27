@@ -158,3 +158,101 @@ text-align: center;
 .register-submit:hover {
   background-color: darkblue;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .register-container-left h1 {
+    font-size: 20px;
+  }
+
+  .register-eventname,
+  .register-event-description,
+  .register-about-event,
+  .register-details {
+    width: 100%;
+  }
+
+  .register-contactname,
+  .register-contactnumber {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .register-submit {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    padding: 15px;
+  }
+
+  .register-container-left h1 {
+    font-size: 18px;
+  }
+
+  .register-eventname,
+  .register-event-description,
+  .register-about-event,
+  .register-details {
+    font-size: 14px;
+  }
+
+  .register-submit {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

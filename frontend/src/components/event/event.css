@@ -190,3 +190,102 @@
         right: 10px;
     }
 }
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .event-detail-container {
+        padding: 15px;
+    }
+
+    .event-main-event-name {
+        font-size: 32px;
+    }
+
+    .event-detail-name {
+        font-size: 22px;
+    }
+
+    .event-detail-description,
+    .event-detail-aboutevent {
+        font-size: 16px;
+    }
+
+    .event-detail-poster {
+        max-width: 100%;
+        max-height: 400px;
+    }
+
+    .event-details-popup {
+        width: 240px;
+        height: 400px;
+        right: 5px;
+        top: 70px;
+    }
+
+    .event-detail-typeofevent,
+    .event-detail-webinar,
+    .event-detail-contact,
+    .event-detail-registration-link {
+        margin-left: 0;
+        font-size: 18px;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+    .event-detail-container {
+        padding: 10px;
+    }
+
+    .event-main-event-name {
+        font-size: 24px;
+    }
+
+    .event-detail-name {
+        font-size: 18px;
+    }
+
+    .event-detail-description,
+    .event-detail-aboutevent {
+        font-size: 14px;
+    }
+
+    .event-detail-poster {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .event-details-popup {
+        width: 200px;
+        height: 350px;
+        right: 5px;
+        top: 50px;
+    }
+
+    .event-detail-typeofevent,
+    .event-detail-webinar,
+    .event-detail-contact,
+    .event-detail-registration-link {
+        font-size: 16px;
+    }
+
+    .event-detail-about-event-title,
+    .event-detail-discription-event-title,
+    .event-detail-Poster-event-title,
+    .event-detail-typeofevent-title,
+    .event-detail-webinarlink-title,
+    .event-detail-contact-title,
+    .event-detail-registration-link-title {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .event-detail-webinar a,
+    .event-detail-registration-link a {
+        font-size: 16px;
+    }
+
+    .event-detail-contact div {
+        font-size: 14px;
+    }
+}
